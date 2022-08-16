@@ -1,0 +1,162 @@
+\documentclass[xcolor=table]{beamer}
+
+\usetheme[secheader,compress]{Madrid} %Primary theme
+
+\usepackage{verbatim}
+\usepackage{graphicx}
+
+%%%%%%%%%%% BEGIN MACROS %%%%%%%%%%%%%%%%%%
+% frameT: Frame with title
+\newcommand{\frameT}[2]{\frame{\frametitle{#1} #2}}
+
+% frameF: Fragile frame with title
+\newcommand{\frameF}[2]{
+  \begin{frame}[fragile]
+    \frametitle{#1}
+    #2
+  \end{frame}
+}
+
+% frameTop: Frame aligned t the top
+\newcommand{\frameTop}[2]{\frame[t]{\frametitle{#1} #2}}
+
+
+\newcommand{\tab}{\hspace{1cm}}
+
+\newcommand{\spaceor}{\hspace{5pt} \textbf{or} \hspace{5pt}}
+
+%%%%%%%%%%% END MACROS %%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\title{Title here!}
+
+\author{Author list here!}
+\institute{UT-Martin}
+\date{\today}
+
+%%%%%%%%%%% BEGIN TITLE %%%%%%%%%%%%%%%%%%
+\frame{\titlepage}
+
+ %\section{Outline}
+%%%%%%%%%%%% END TITLE  %%%%%%%%%%%%%%%%%%
+
+
+\section{Introduction}
+\frameT{Motivation} {
+  List some of your motivations here!
+  \bigskip
+  \begin{enumerate}
+    \item Some ideas
+      \bigskip
+    \item More ideas!
+  \end{enumerate}
+
+  \bigskip
+  
+  One or more slides of background or motivation.
+}
+
+
+
+\section{Sections--a useful organizational tool.}
+
+%% \frameT{Logic Preliminaries} {
+%%   \begin{itemize}
+%%     \item Conjunction
+%%       \begin{center}
+%%         $blond(mike) \land tall(mike)$ \tab ``mike is blond AND mike is tall''
+%%       \end{center}
+%%       \bigskip
+
+%%     %%\item $\lor$ \tab Disjunction
+%%     \item Disjunction
+%%       \begin{center}
+%%         $blank \lor blank$ \tab ``bland \textit{OR} blank''
+%%       \end{center}
+%%       \bigskip 
+
+%%     %% \item $\rightarrow$ \tab Implication
+%%     \item Implication
+%%       \begin{center}
+%%         $cat(tom) \rightarrow mammal(tom)$ \tab ``If tom is a cat THEN tom is a mammal'' %or ``blank implies blank''
+%%       \end{center}
+%%       \bigskip
+
+%%     \item Negation
+%%     %% \item $\lnot$ \tab Negation
+%%       \begin{center}
+%%         $\lnot blank$ \tab ``Not blank''
+%%       \end{center}
+
+%%   \end{itemize}
+%% }
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Family Tree Knowledge Base}
+Facts:
+\begin{verbatim}
+Verbatim is a great way of enumerating code/algorithmic ideas.
+\end{verbatim}
+\end{frame}
+
+
+\frameT{How to include images} {
+  %% \includegraphics[width=.7\linewidth]{figures/image.pdf}
+}
+
+
+\begin{frame}[fragile]
+  \frametitle{Social Network Graph}
+  \begin{figure}[ht]
+    \begin{minipage}[b]{0.53\linewidth}
+      \centering
+      Minipages are a great way to
+    \end{minipage}
+    \hspace{0.5cm}
+    \begin{minipage}[b]{0.4\linewidth}
+      \centering
+      Line up side-by-side content.
+
+    \end{minipage}
+  \end{figure}
+  
+\end{frame}
+
+
+
+
+
+\frameT{Any Questions?} {
+  It is a good idea to have a page inviting the audience to interact. You may learn quite a bit from each other.
+  \begin{center}
+    Questions?
+  \end{center}
+  \begin{center}
+    Comments?
+  \end{center}
+}
+
+%\frameF{fragile test} {
+%}
+
+%% \frameF{Prolog Family Tree} {
+%% \begin{verbatim}
+%% hello
+%% \end{verbatim}
+
+
+
+%% }
+
+%Empty Page
+%\frameT{Frame 1}{
+%}  
+
+
+\end{document}
