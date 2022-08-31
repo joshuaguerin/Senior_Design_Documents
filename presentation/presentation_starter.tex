@@ -5,6 +5,20 @@
 \usepackage{verbatim}
 \usepackage{graphicx}
 
+%% UTM Colors
+\definecolor{UTMblue}{rgb}{0.043137, 0.137254, 0.254901}
+\definecolor{UTMorange}{rgb}{1.0, 0.509803, 0}
+
+\setbeamercolor{palette primary}{bg=UTMblue,fg=white}
+\setbeamercolor{palette secondary}{bg=UTMblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=UTMblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=UTMblue,fg=white}
+\setbeamercolor{structure}{fg=UTMblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=UTMblue} % TOC sections
+\setbeamercolor{title}{fg=UTMorange}
+
+\setbeamercolor{subsection in head/foot}{bg=UTMorange,fg=white}
+
 %%%%%%%%%%% BEGIN MACROS %%%%%%%%%%%%%%%%%%
 % frameT: Frame with title
 \newcommand{\frameT}[2]{\frame{\frametitle{#1} #2}}
